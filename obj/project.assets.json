@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IFSP\\Projetos\\CalculadoraIMC\\CalculadoraIMC.csproj",
+      "projectUniqueName": "C:\\Users\\IFSP\\Documents\\CalculadoraIMC\\CalculadoraIMC.csproj",
       "projectName": "CalculadoraIMC",
-      "projectPath": "C:\\Users\\IFSP\\Projetos\\CalculadoraIMC\\CalculadoraIMC.csproj",
+      "projectPath": "C:\\Users\\IFSP\\Documents\\CalculadoraIMC\\CalculadoraIMC.csproj",
       "packagesPath": "C:\\Users\\IFSP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IFSP\\Projetos\\CalculadoraIMC\\obj\\",
+      "outputPath": "C:\\Users\\IFSP\\Documents\\CalculadoraIMC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

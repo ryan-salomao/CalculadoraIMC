@@ -23,41 +23,55 @@ namespace CalculadoraIMC
                 resultado = "Muito abaixo do peso";
             }
 
-            if(imc >= 17 || imc < 18.5)
+            else if(imc < 18.5)
             {
                 resultado = "Abaixo do peso";
             }
 
-            if(imc >= 18.5 || imc < 25)
+            else if(imc < 25)
             {
                 resultado = "Peso normal";
             }
 
-            if(imc >= 25 || imc < 30)
+            else if(imc < 30)
             {
                 resultado = "Acima do peso";
             }
 
-            if(imc >= 30 || imc < 35)
+            else if(imc < 35)
             {
                 resultado = "Obesidade I";
             }
-
-            if(imc >= 35 || imc < 40)
+            
+            else if(imc < 40)
             {
                 resultado = "Obesidade II";
             }
 
-            if(imc >= 40)
+            else
             {
                 resultado = "Obesidade III";
             }
 
-            Console.WriteLine("{0} sua altura é {1} e seu peso é {2}", nome, altura, peso);
+            Console.WriteLine("{0}, sua altura é {1} metros e seu peso é {2} quilos.", nome, altura, peso);
 
-            Console.WriteLine("Seu IMC é {0}", imc);
+            Console.WriteLine("Seu IMC é {0}.", imc);
 
-            Console.WriteLine("Situação: {0}.", resultado);
+            Console.WriteLine("Situação: {0}.", resultado); 
+
+            if(imc >= 25)
+            {
+                double pesoIdeal = (24.99 * peso) / imc;
+                double perderPeso = peso - pesoIdeal;
+                Console.WriteLine("Você deve perder {0} quilos para chegar ao seu peso ideal.", perderPeso);
+            }
+
+            if(imc < 18.5)
+            {
+                double pesoIdeal = (18.5 * peso) / imc;
+                double ganharPeso = pesoIdeal - peso;
+                Console.WriteLine("Você deve ganhar {0} quilos para chegar ao seu peso ideal.", ganharPeso);
+            }
         }
     }
 }
